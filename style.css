@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Fira Code;
+  src: url(./font/FiraCode-Regular.ttf)
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  /* Background */
+  background-image: url(img/cafe.gif);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  
+  /* Tamanho Container*/
+  min-width: 35rem;
+  min-height: 10rem;
+  
+  /* Border Container */
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: 0px 9px 12px rgba(0, 0, 0, .5);
+
+}
+
+.container div {
+  /* Flexbox*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background relogio*/
+  background: rgba(0, 0, 0, 0.671);
+  color: #FFFDA1;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, .75);
+  border-radius: 9px;
+  letter-spacing: 3px;
+
+  /* Tamanho */
+  min-width: 10rem;
+  min-height: 9rem;
+
+  
+}
+
+.container p {
+  font-weight: Fira Code;
+  font-size: 2.75rem;
+}
+
+.container p.tempo {
+  font-size: 0.75rem;
+}
